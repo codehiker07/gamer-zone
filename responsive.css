@@ -1,0 +1,27 @@
+@media screen and (max-width: 576px) {
+    header{
+        margin: 50px;
+    }
+    .nav-container,
+    .menu-container {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      width: 100%;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 992px){
+    header{
+        margin: 50px;
+    }
+    .nav-container,
+    .menu-container {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      width: 100%;
+    }
+  }
