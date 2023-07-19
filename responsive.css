@@ -29,6 +29,10 @@
   width: max-content;
   align-items: center;
 }
+.footer-menu,.terms-menu,.terms-text, .footer-icon {
+  display: flex;
+  flex-wrap: wrap;
+}
   }
 
     
@@ -68,5 +72,10 @@
     flex-direction: column-reverse;
     width: auto;
   }
+  .footer-menu,.terms-menu,.terms-text, .footer-icon {
+    display: flex;
+    flex-wrap: wrap;
   }
+    }
+
   
