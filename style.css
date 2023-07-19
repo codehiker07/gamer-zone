@@ -3,16 +3,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: 'Work Sans', sans-serif;
 }
 
-header{
-    margin: 40px 240px;
+header {
+    margin: 40px;
 }
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -24,7 +24,8 @@ header{
     width: 50%;
     justify-content: center;
 }
-.g-color{
+
+.g-color {
     color: #FF42A5;
 }
 
@@ -36,7 +37,7 @@ header{
     color: #3C354F;
 }
 
-.menu-container a{
+.menu-container a {
     margin-right: 20px;
     text-decoration: none;
 }
@@ -53,15 +54,73 @@ header{
     font-weight: 700;
 }
 
-.follow-buttons{
+.follow-buttons {
+    display: flex;
     padding: 10px 20px;
     border-radius: 12px;
     background: rgba(11, 2, 35, 0.10);
 }
 
-.fa-brands{
+.fa-brands {
     padding: 6px;
 }
-.fa-youtube{
+
+.fa-youtube {
     color: #F61C0D;
+}
+
+/* Banner section style */
+.banner-container {
+    background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.right-container{
+    margin-right: 240px;
+}
+.right-container img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 15px 20px;
+    background: #FF42A5;
+    border: none;
+    border-radius: 25px;
+}
+
+.left-container {
+    text-align: left;
+    margin-left: 400px;
+
+}
+
+.left-container h3 {
+    color: #0B0223;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.banner-paragraph{
+    margin-bottom: 10px;
+    color: #534C64;
+}
+
+.btn{
+    margin-right: 15px;
 }

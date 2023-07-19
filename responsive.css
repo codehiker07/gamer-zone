@@ -3,15 +3,36 @@
         margin: 50px;
     }
     .nav-container,
-    .menu-container {
+    .menu-container,
+    .banner-container {
       flex-direction: column;
       gap: 30px;
       align-items: center;
-      width: 100%;
+      width: 50px auto 0;
     }
+    .right-container{
+      margin-right: 0px;
+      padding:0 30px;
+    }
+    .right-container img {
+      width: 100%;
+      
+  }
+  .left-container {
+    text-align: center;
+    margin: 0px;
+    padding:0 50px;
+
+}
+.follow-buttons{
+  flex-direction: row;
+  width: max-content;
+  align-items: center;
+}
+  }
 
     
-  }
+
 
   @media screen and (min-width: 576px) and (max-width: 992px){
     header{
@@ -24,4 +45,28 @@
       align-items: center;
       width: 100%;
     }
+    .right-container{
+      margin-right: 0px;
+      padding:0 30px;
+    }
+    .right-container img {
+      width: 80%;
+      
   }
+  .left-container {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+
+}
+  .follow-buttons{
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+    width: auto;
+  }
+  }
+  
