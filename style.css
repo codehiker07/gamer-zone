@@ -141,11 +141,15 @@ header {
 
 .amer,
 .footer-menu,
-.footer-icon, .terms-menu, .terms-text {
+.footer-icon,
+.terms-menu,
+.terms-text {
     color: white;
 }
 
-.footer-menu,.terms-menu,.terms-text {
+.footer-menu,
+.terms-menu,
+.terms-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,15 +164,96 @@ header {
 #foo {
     margin: 50px auto 0;
 }
-.footer-icon{
+
+.footer-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin-top: 30px;
     font-size: 2rem;
-    }
-.terms-menu, .terms-text{
+}
+
+.terms-menu,
+.terms-text {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.60);
+}
+
+/* Funny Video Section */
+.funny-video-container {
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.funny-text-container {
+    padding: 30px;
+}
+
+.funny-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    width: auto;
+    margin: 25px;
+    gap: 5px;
+
+}
+
+.funny-heading {
+    color: #0B0223;
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.funny-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.funny-paragraph,
+.common-para {
+    color: #534C64;
+}
+
+/* Button Sections */
+.btn-box-bg{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 20px;
+
+}
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 243px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 5px;
+}
+
+.spn-text {
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 15px;
+    text-align: center;
+}
+.button-container{
+    display: grid;
+    max-width: 1500px;
+    gap: 30px;
+    margin-left: 150px;
+    grid-template-columns: repeat(5, 1fr);
+
 }
