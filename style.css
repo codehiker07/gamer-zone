@@ -224,57 +224,52 @@ header {
 .common-para {
     color: #534C64;
 }
-
-/* Button Sections */
-.btn-box-bg {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    padding: 20px;
-    margin-top: 250px;
-
+/* Play Button in Image */
+.image-container {
+    position: relative;
+  }
+  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: rgba(32, 32, 32, 0.5);
+}
+  
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 243px;
-    height: 80px;
-    border-radius: 50px;
-    background: #FFF;
-    padding: 5px;
-}
-
-.spn-text {
-    color: #0B0223;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-left: 15px;
-    text-align: center;
-}
-
-.button-container {
-    display: grid;
-    max-width: 1500px;
-    gap: 30px;
-    margin-left: 150px;
-    grid-template-columns: repeat(5, 1fr);
-
+.dark-overlay {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Play Section */
+
 .play-section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 60px;
-
+    margin-bottom: 80px;
 }
 
 .play-container {
     width: 500px;
     height: auto;
-    margin-top: 220px;
+    margin-top: 250px;
 }
 
 h1 {
@@ -282,7 +277,6 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 60px;
-
 }
 
 h1 .play-color {
@@ -296,16 +290,16 @@ h1 .play-color {
     color: #534C64;
     text-align: right;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .play-img-container {
-    margin-left: 90px;
+    margin-bottom: 150px;
+    margin-top: auto;
 }
-
-
 
 .play-img-container .img1 {
     width: 40%;
@@ -315,9 +309,9 @@ h1 .play-color {
     height: auto;
     border-radius: 1px;
     border: 10px solid #FFF;
-    position: absolute;
-    
+    position: absolute;  
 }
+
 .play-img-container .img2 {
     width: 80%;
     display: block;
@@ -325,4 +319,43 @@ h1 .play-color {
     position: relative;
     bottom: -160px;
     right: 15px;
+}
+
+/* Button Sections */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 80px 200px;
+    max-width: 100%;
+    gap: 30px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.single-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 70px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.single-box:hover{
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+}
+
+.single-box img {
+    padding: 5px;
+    width: 25%;
+    height: auto;
+}
+
+.single-box h4 {
+    padding-left: 10px;
 }
